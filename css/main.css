@@ -1,0 +1,1485 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* 重置样式 */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+i { font-style: normal; }
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/* 页面样式 */
+
+body {
+  font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+  color: #666;
+  background-color: #fff;
+}
+
+a:hover { color: #c81623; }
+
+/* 顶部广告区 */
+
+.top-banner {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #35a7fe;
+}
+
+.top-banner .container {
+  position: relative;
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.i-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url(../img/i-close.png) 0 0 no-repeat;
+}
+.i-close:hover { background-position: 0 -19px; }
+
+/* 搜索区 */
+
+/* sa = search-area */
+
+.sa {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.sa-logo {
+  position: relative;
+  z-index: 12;
+  float: left;
+  width: 362px;
+  height: 60px;
+  padding: 20px 0;
+}
+
+.sa-link-logo {
+  display: block;
+  width: 270px;
+  height: 60px;
+  text-indent: -20000px;
+  background: url(../img/logo.png) 0 0 no-repeat;
+}
+
+.sa-search {
+  position: relative;
+  z-index: 11;
+  float: left;
+  margin-top: 25px;
+}
+
+.sa-search form {
+  width: auto;
+  height: 36px;
+}
+
+.sa-input {
+  float: left;
+  width: 446px;
+  height: 24px;
+  margin-bottom: 4px;
+  padding: 4px;
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+  border-width: 2px 0 2px 2px;
+  border-color: #b61d1d;
+  border-style: solid;
+  outline: 0;
+}
+
+.sa-submit-btn {
+  float: left;
+  width: 82px;
+  height: 36px;
+  font-family: 'Microsoft Yahei';
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  background-color: #b61d1d;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sa-dropdown {
+  position: relative;
+  z-index: 11;
+  float: right;
+  height: 36px;
+  margin-top: 25px;
+  margin-right: 65px;
+}
+
+.sa-shopcar {
+  position: relative;
+  width: 75px;
+  height: 34px;
+  padding: 0 28px 0 36px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #dfdfdf;
+}
+
+.sa .i-shopcar {
+  position: absolute;
+  top: 9px;
+  left: 18px;
+  display: block;
+  width: 18px;
+  height: 16px;
+  background: url(../img/icon.png) 0 -58px no-repeat;
+}
+
+.sa .i-count {
+  position: absolute;
+  top: -4px;
+  left: 104px;
+  display: inline-block;
+  min-width: 12px;
+  padding: 1px 2px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #fff;
+  background-color: #c81623;
+  border-radius: 7px 7px 7px 0;
+}
+
+.sa .i-menu-right {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  display: block;
+  width: 7px;
+  height: 13px;
+  font: 400 13px/13px simsun;
+  color: #999;
+  overflow: hidden;
+}
+
+.sa-dropdown-menu {
+  position: absolute;
+  right: 0;
+  display: none;
+  width: 308px;
+}
+.sa-dropdown:hover .sa-dropdown-menu { display: block; }
+
+.sa-shopcar-inner { padding: 10px 15px; }
+
+.sa-nogoods {
+  height: 49px;
+  padding-left: 30px;
+  line-height: 49px;
+  color: #999;
+  overflow: hidden;
+}
+
+.sa-nogoods img {
+  float: left;
+  width: 56px;
+  height: 49px;
+}
+
+.sa-dropdown-menu .spacer {
+  position: absolute;
+  top: -7px;
+  right: 0;
+  display: none;
+  width: 139px;
+  height: 12px;
+  background-color: #fff;
+}
+.sa-dropdown:hover .spacer { display: block; }
+
+.sa-dropdown:hover .sa-shopcar,
+.sa-dropdown:hover .sa-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.sa .hotwords {
+  float: left;
+  width: 518px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.sa .hotwords a {
+  float: left;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.sa .hotwords .active { color: #c81623; }
+
+/* 商品分类 */
+
+.goods-nav {
+  width: 100%;
+  height: 44px;
+  border-bottom: 2px solid #b1191a;
+  font-family: "Microsoft Yahei", Tahoma, Arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+}
+
+.goods-nav .container {
+  position: relative;
+  z-index: 9;
+  width: 1210px;
+  height: 44px;
+  margin: 0 auto;
+  border-bottom: 2px solid #b1191a;
+}
+
+.goods-category {
+  position: relative;
+  z-index: 10;
+  float: left;
+  width: 210px;
+  height: 44px;
+  background-color: #b1191a;
+}
+
+.goods-category .dt a {
+  display: block;
+  width: 190px;
+  height: 44px;
+  padding: 0 10px;
+  font: 400 15px/44px "Microsoft Yahei";
+  color: #fff;
+  background-color: #b1191a;
+}
+
+.goods-category .dd {
+  height: 466px;
+  margin-top: 2px;
+  background-color: #c81623;
+}
+
+.goods-category .dropdown .item {
+  position: relative;
+  z-index: 1;
+  height: 31px;
+  color: #fff;
+  border-left: 1px solid #b61d1d;
+}
+
+.goods-category .dropdown h3 {
+  position: absolute;
+  z-index: 2;
+  height: 31px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.goods-category .dropdown i {
+  position: absolute;
+  z-index: 1;
+  top: 9px;
+  right: 14px;
+  width: 4px;
+  height: 14px;
+  font: 400 9px/14px consolas;
+}
+
+.goods-category .dropdown .hover i {
+  top: 0;
+  left: 205px;
+  width: 14px;
+  height: 31px;
+  line-height: 200px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.goods-category .dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: 209px;
+  /*display: none;*/
+  width: 999px;
+  background: #f7f7f7;
+  border: 1px solid #b61d1d;
+  overflow: hidden;
+}
+.goods-category .dropdown-menu .hover { display: block; }
+
+.goods-category .dropdown .hover {
+  color: #b61d1d;
+  background-color: #f7f7f7;
+}
+
+.goods-category .item-brands {
+  float: right;
+  display: inline;
+  width: 168px;
+  margin: 19px 20px 10px 0;
+  overflow: hidden;
+}
+
+.goods-category .item-brands a {
+  display: inline;
+  float: left;
+  margin: 1px 0 0 1px;
+}
+
+.goods-category .item-channels {
+  float: left;
+  display: inline;
+  widows: 790px;
+  height: 24px;
+  padding: 20px 0 0 20px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.goods-category .item-channels a {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  padding-left: 8px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #7c7171;
+  white-space: nowrap;
+}
+.goods-category .item-channels a:hover { background-color: #c81623; }
+
+.goods-category .item-channels i {
+  display: inline-block;
+  width: 23px;
+  height: 24px;
+  margin-left: 8px;
+  font: 400 9px/24px consolas;
+  text-align: center;
+  background-color: #5c5251;
+  cursor: pointer;
+}
+.goods-category .item-channels a:hover i { background-color: #b1191a; }
+
+.goods-category .subitems {
+  float: left;
+  width: 790px;
+  min-height: 409px;
+  margin-bottom: -1000px;
+  padding: 6px 0 1006px 20px;
+  background-color: #f7f7f7;
+}
+
+.goods-category .subitems dl {
+  width: 100%;
+  line-height: 2em;
+  overflow: hidden;
+}
+
+.goods-category .subitems dt {
+  position: relative;
+  float: left;
+  width: 54px;
+  padding: 8px 30px 0 0;
+  font-weight: 700;
+  text-align: right;
+}
+
+.goods-category .subitems dt i {
+  position: absolute;
+  top: 13px;
+  right: 18px;
+  width: 4px;
+  height: 14px;
+  font: 400 9px/14px consolas;
+}
+
+.goods-category .subitems dd {
+  float: left;
+  width: 620px;
+  padding: 6px 0;
+  border-top: 1px solid #eee;
+}
+
+.goods-category .subitems .list1 dd { border-top: none; }
+
+.goods-category .subitems dd a {
+  float: left;
+  height: 16px;
+  margin: 4px 0;
+  padding: 0 8px;
+  line-height: 16px;
+  white-space: nowrap;
+  border-left: 1px solid #e0e0e0;
+}
+
+.goods-category .item-promotions {
+  float: right;
+  display: inline;
+  width: 168px;
+  margin-right: 20px;
+}
+
+.goods-category .item-promotions a {
+  display: block;
+  margin-bottom: 1px;
+}
+
+.goods-category .item-sub {
+  display: none;
+  overflow: hidden;
+}
+
+.nav-item {
+  position: relative;
+  z-index: 2;
+  float: left;
+}
+
+.nav-item ul,
+.nav-item ul > li { float: left; }
+
+.nav-item a {
+  height: 44px;
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 44px;
+  color: #333;
+}
+.nav-item a:hover {
+  color: #c81623;
+}
+
+/* 轮播背景 */
+
+.focus-bg { position: relative; }
+
+.focus-bg-link {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 467px;
+  background: url(../img/focus-bg.jpg) center top no-repeat;
+}
+
+/* 轮播图片 */
+
+.focus {
+  position: relative;
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.focus .slider {
+  position: relative;
+  z-index: 3;
+  width: 1210px;
+  height: 466px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.focus .slider-main { position: relative; }
+
+.focus .slider-panel {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 466px;
+  opacity: 0;
+}
+
+.focus .slider-panel .inner {
+  width: 1210px;
+  height: 466px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.focus .slider-panel a {
+  display: block;
+  width: 730px;
+  height: 454px;
+  margin: 12px 250px 0 220px;
+  overflow: hidden;
+}
+
+.focus .slider-extra {
+  position: relative;
+  width: 1210px;
+  height: 466px;
+  margin: 0 auto;
+}
+
+.focus .slider-nav {
+  position: absolute;
+  z-index: 3;
+  top: 440px;
+  left: 210px;
+  width: 750px;
+  height: 0;
+  line-height: 0;
+  text-align: center;
+}
+
+.focus .slider-nav li {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 2px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background-color: #3e3e3e;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.focus .slider-nav .selected { background-color: #b61b1f; }
+
+.slider-page a {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  display: block;
+  width: 28px;
+  height: 62px;
+  margin-top: -31px;
+  font: 400 22px/62px simsun;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0,.2);
+}
+
+.slider-page .prev { left: 220px; }
+.slider-page .next { right: 260px; }
+
+.focus .slider-page { display: none; }
+.focus .slider:hover .slider-page { display: block; }
+
+/* 京东快报 */
+
+.focus-extra {
+  position: relative;
+  z-index: 8;
+  top: -466px;
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.focus-extra .news {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 248px;
+  height: 163px;
+  background: rgba(255,255,255,.85);  
+  border: 1px solid #e4e4e4;
+  border-bottom: 0;
+}
+
+.news .title {
+  height: 32px;
+  padding: 0 15px;
+  line-height: 32px;
+  border-bottom: 1px dotted #e8e8e7;
+}
+
+.news h2 {
+  float: left;
+  font-family: "Microsoft Yahei";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.news .link-more {
+  float: right;
+  font-family: consolas;
+}
+
+.news .content {
+  height: 120px;
+  padding: 5px 0 0 15px;
+}
+
+.news li {
+  width: 210px;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.news li span {
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.focus-extra .lifeserv {
+  position: absolute;
+  top: 176px;
+  right: 0;
+  width: 248px;
+  background-color: rgba(255,255,255,.85);
+  border: 1px solid #e4e4e4;
+  overflow: hidden;
+}
+
+.lifeserv .content {
+  position: relative;
+  height: 208px;
+}
+
+.lifeserv ul {
+  position: relative;
+  width: 260px;
+  height: 209px;
+  overflow: hidden;
+}
+
+.lifeserv li {
+  float: left;
+  width: 62px;
+  height: 70px;
+  border-right: 1px solid #e8e8e7;
+  border-bottom: 1px solid #e8e8e7;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.lifeserv a {
+  position: relative;
+  display: block;
+  width: 62px;
+  height: 28px;
+  padding-top: 41px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.lifeserv i  {
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/lifeserv.png) no-repeat;
+}
+
+.lifeserv .fore1 i { background: url(../img/lifeserv.png) 0 0 no-repeat; }
+.lifeserv .fore2 i { background: url(../img/lifeserv.png) 0 -25px no-repeat; }
+
+.lifeserv .fore2 .i-tip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 12px;
+  height: 15px;
+  background: url(../img/i-tip.png) no-repeat;
+}
+
+.lifeserv .fore3 i { background: url(../img/lifeserv.png) 0 -50px no-repeat; }
+.lifeserv .fore4 i { background: url(../img/lifeserv.png) 0 -75px no-repeat; }
+.lifeserv .fore5 i { background: url(../img/lifeserv.png) 0 -100px no-repeat; }
+.lifeserv .fore6 i { background: url(../img/lifeserv.png) 0 -125px no-repeat; }
+.lifeserv .fore7 i { background: url(../img/lifeserv.png) 0 -150px no-repeat; }
+.lifeserv .fore8 i { background: url(../img/lifeserv.png) 0 -175px no-repeat; }
+.lifeserv .fore9 i { background: url(../img/lifeserv.png) 0 -250px no-repeat; }
+.lifeserv .fore10 i { background: url(../img/lifeserv.png) 0 -200px no-repeat; }
+.lifeserv .fore11 i { background: url(../img/lifeserv.png) 0 -275px no-repeat; }
+.lifeserv .fore12 i { background: url(../img/lifeserv.png) 0 -225px no-repeat; }
+
+.focus-extra .right-pic {
+  position: absolute;
+  top: 391px;
+  right: 0;
+  width: 250px;
+  height: 75px;
+  background-color: rgba(255,255,255,.85);
+}
+
+/* 今日推荐 */
+
+.today-recos {
+  width: 1210px;
+  height: 184px;
+  margin: 0 auto;
+}
+
+.todays {
+  position: relative;
+  z-index: 3;
+  height: 164px;
+  margin: 10px 0 20px;
+  overflow: hidden;
+}
+
+.todays .title {
+  float: left;
+  width: 210px;
+  height: 151px;
+  background: url(../img/today-recos.png) -213px -136px no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.todays .slider {
+  position: relative;
+  float: left;
+  width: 1000px;
+  height: 164px;
+  overflow: hidden;
+}
+
+.todays .slider ul {
+  position: absolute;
+  left: 0;
+  width: 4000px;
+}
+
+.todays .slider li {
+  display: list-item;
+  float: left;
+  width: 1000px;
+  height: 164px;
+}
+
+.todays .slider li div {
+  float: left;
+  overflow: hidden;
+}
+
+.todays .slider li .fore1,
+.todays .slider li .fore2,
+.todays .slider li .fore3 {
+  width: 249px;
+  margin-right: 1px;
+}
+
+.todays .slider li .fore4 { width: 250px; }
+.todays .slider img {
+  width: 250px;
+  height: 164px;
+}
+
+.todays .slider-page { display: none; }
+.todays .slider:hover .slider-page { display: block; }
+
+.todays .slider-page .slider-prev { left: 0; }
+.todays .slider-page .slider-next { right: 0; }
+
+/* 京东品质生活 */
+
+.jdlife {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.jd-life { margin-bottom: 20px; }
+
+.jd-life h2 {
+  font-family: "Microsoft Yahei";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #333;
+}
+
+.jd-life .content {
+  height: 405px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+}
+
+.jd-life .col1,
+.jd-life .col2,
+.jd-life .col3 {
+  float: left;
+  height: 100%;
+}
+
+.jd-life .col1 { background-color: #f7f7f7; }
+
+.jd-life .item,
+.jd-life .item-small {
+  position: relative;
+  display: block;
+  width: 355px;
+  height: 246px;
+  border-right: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  overflow: hidden;
+}
+
+.jd-life .col1 .item { width: 403px; }
+
+.jd-life .area-title {
+  position: relative;
+  z-index: 1;
+  margin: 0 20px;
+  border-bottom: 1px dashed #e0e0e0;
+  font: 700 15px/40px "Microsoft Yahei";
+  text-align: center;
+  color: #333;
+}
+
+.jd-life .subtitle {
+  position: absolute;
+  z-index: 2;
+  top: 109px;
+  left: 10px;
+  font-family: "Microsoft Yahei";
+  line-height: 1.2;
+  color: #333;
+}
+
+.jd-life .col1 .item .subtitle { left: 45px; }
+
+.jd-life .title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.jd-life .desc { margin-bottom: 4px; }
+.jd-life .promotion { color: #c81623; }
+
+.jd-life .item-small {
+  float: left;
+  height: 158px;
+  border-bottom: none;
+}
+
+.jd-life .col1 .item-small { width: 201px; }
+
+.jd-life .col1 .item-small .subtitle,
+.jd-life .col2 .item-small .subtitle,
+.jd-life .col3 .item-small .subtitle { top: 48px; }
+
+.jd-life .col2 .item { width: 228px; }
+.jd-life .col2 .item-small { width: 228px; }
+.jd-life .col3 { 
+  width: 404px;
+  height: 405px; 
+  overflow: hidden;
+}
+
+.jd-life .brands {
+  position: relative;
+  float: right;
+  width: 171px;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.jd-life .brands-left,
+.jd-life .brands-right {
+  position: relative;
+  float: left;
+  width: 85px;
+  height: 381px;
+  margin-top: 13px;
+}
+
+.jd-life ul {
+  margin-top: -13px;
+  overflow: hidden;
+}
+
+.jd-life .brands-left { border-right: 1px dashed #e0e0e0; }
+
+.jd-life .brands-left li,
+.jd-life .brands-right li {
+  position: relative;
+  width: 75px;
+  height: 57px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.jd-life .brands-left li { float: right; }
+.jd-life .brands-right li { float: left; }
+
+.jd-life .brands a {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 85px;
+  height: 57px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.jd-life .brands-left a { right: 0; }
+.jd-life .brands-right a { left: 0; }
+
+/* 右侧工具条 */
+
+.global-toolbar {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  border-right:  6px solid #7a6e6e;
+}
+
+.toolbar-tabs {
+  position: absolute;
+  top: 50%;
+  left: -29px;
+  width: 35px;
+  margin-top: -61px;
+}
+
+.toolbar-tabs-item {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 1px;
+  background-color: #7a6e6e;
+  -moz-border-radius: 3px 0 0 3px;
+       border-radius: 3px 0 0 3px;
+  cursor: pointer;
+}
+
+.toolbar-tabs-item .tab-tip {
+  position: absolute;
+  z-index: 999;
+  top: 8px;
+  right: 10px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: url(../img/toolbar.png) -150px -150px no-repeat;
+}
+.toolbar-tabs-item-hover .tab-tip { display: none; }
+
+.toolbar-tabs-item .tab-icon {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 34px;
+  height: 35px;
+  margin-left: 1px;
+  background: #7a6e6e url(../img/toolbar.png) no-repeat;
+}
+.toolbar-tabs-item-hover .tab-icon { background-color: #c81623; }
+
+.toolbar-tabs-item .tab-text {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 35px;
+  display: block;
+  width: 62px;
+  height: 35px;
+  font-family: "Microsoft Yahei";
+  line-height: 35px;
+  color: #fff;
+  text-align: center;
+  background-color: #7a6e6e;
+  -moz-border-radius: 3px 0 0 3px;
+       border-radius: 3px 0 0 3px;
+  -webkit-transition: left .3s ease-in-out .1s;
+     -moz-transition: left .3s ease-in-out .1s;
+       -o-transition: left .3s ease-in-out .1s;
+          transition: left .3s ease-in-out .1s;
+}
+
+.toolbar-tabs-item-hover .tab-text{ 
+  left: -60px;
+  background-color: #c81623; 
+}
+
+.toolbar-tabs-item-jdvip .tab-icon { background-position: -88px -175px; }
+.toolbar-tabs-item-cart .tab-icon { background-position: -50px 0; }
+.toolbar-tabs-item-follow .tab-icon { background-position: -50px -50px; }
+.toolbar-tabs-item-history .tab-icon { background-position: -50px -100px; }
+.toolbar-tabs-item-msg .tab-icon { background-position: -190px -150px; }
+.toolbar-tabs-item-jimi .tab-icon { background-position: -50px -150px; }
+.toolbar-tabs-item-top .tab-icon { background-position: -50px -250px; }
+.toolbar-tabs-item-feedback .tab-icon { background-position: -50px -300px; }
+
+.toolbar-footer .toolbar-tabs-item .tab-text { width: 50px; }
+.toolbar-footer .toolbar-tabs-item-hover .tab-text{ left: -48px; }
+
+.toolbar-footer {
+  position: absolute;
+  bottom: -1px;
+  left: -29px;
+  width: 100%;
+}

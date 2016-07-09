@@ -1,0 +1,100 @@
+.footer { height: 457px; }
+.ft-service { margin-bottom: 20px; }
+.ft-statement {
+  width: 1210px;
+  margin: 0 auto;
+  padding: 20px 0 30px;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.ft-slogan {
+  position: relative;
+  height: 54px;
+  margin-bottom: 14px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.ft-slogan .item {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  display: inline-block;
+  width: 302px;
+  height: 54px;
+  font: 400 18px/50px "Microsoft Yahei";
+  text-align: left;
+  vertical-align: middle;
+}
+
+.ft-slogan .fore1 { margin-left: -604px; }
+.ft-slogan .fore2 { margin-left: -304px; }
+.ft-slogan .fore3 { margin-left: 0; }
+.ft-slogan .fore4 { margin-left: 304px; }
+
+.ft-slogan .item i {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: block;
+  width: 220px;
+  height: 54px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.ft-slogan .fore1 i { background-image: url(../img/slogan1.png); }
+.ft-slogan .fore2 i { background-image: url(../img/slogan2.png); }
+.ft-slogan .fore3 i { background-image: url(../img/slogan3.png); }
+.ft-slogan .fore4 i { background-image: url(../img/slogan4.png); }
+
+.ft-slogan .item span {
+  padding: 0 10px;
+  font-size: 24px;
+  color: #c81623;
+}
+
+.ft-nav {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.ft-nav dl {
+  float: left;
+  width: 199px;
+}
+
+.ft-nav .fore5 { width: 100px; }
+
+.ft-nav dt {
+  padding: 6px 0;
+  font: 400 16px/24px "Microsoft Yahei";
+}
+
+.ft-nav dd { line-height: 20px; }
+
+.ft-nav .coverage {
+  float: right;
+  width: 310px;
+  height: 168px;
+  background: url(../img/coverage.png) 60px -131px no-repeat;
+}
+
+.ft-nav .coverage .dt {
+  padding: 6px 40px 15px 80px;
+  font: 400 16px/24px "Microsoft Yahei";
+}
+
+.ft-nav .coverage .dd { padding: 0 40px 15px 80px; }
+.text-right { text-align: right; }
+
+.ft-links a { margin: 0 10px; }
+.ft-copyright { margin: 10px 0; }
+.ft-authentication a { margin: 0 5px; }
+
+.ft-authentication img {
+  width: 103px;
+  height: 32px;
+}

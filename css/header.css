@@ -1,0 +1,429 @@
+/* 页头通用样式 */
+
+/* tn = topnav */
+
+.tn .dropdown {
+  position: relative;
+  z-index: 13;
+}
+
+.tn .dropdown-menu {
+  position: absolute;
+  top: 30px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.tn .dropdown:hover .dropdown-menu { display: block; }
+
+.tn .fr > li {
+  float: left;
+  height: 30px;
+  padding: 0 2px;
+}
+
+/* dropdown元素hover时会多出1px边框，同时减少1px补白避免其移动 */
+
+.tn .fr .dropdown:hover { padding: 0 1px; }
+
+.tn .dt {
+  float: left;
+  padding: 0 8px;
+}
+
+.tn .dropdown:hover .dt {
+  border: solid #ddd;
+  border-width: 0 1px;
+  background-color: #fff;
+}
+
+.tn .dd { line-height: 24px; }
+
+.tn .i-menu {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  display: block;
+  height: 7px;
+  font: 400 15px/15px consolas;
+  color: #6a6a6a;
+  overflow: hidden;
+  transition: transform .1s ease-in 0s;
+  -webkit-transition: -webkit-transform .1s ease-in 0s;
+}
+
+.tn .i-menu .i-menu-up {
+  position: relative;
+  top: -8px;
+}
+
+.tn .dropdown:hover .i-menu {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.tn .fr .spacer {
+  width: 1px;
+  height: 12px;
+  margin-top: 9px;
+  padding: 0;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.tn .dd-spacer {
+  position: absolute;
+  top: -7px;
+  display: none;
+  height: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.tn .dropdown:hover .dd-spacer { display: block; }
+
+/* 浮动与清除浮动 */
+
+.fl { float: left; }
+.fr { float: right; }
+
+.clearfix:before {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* 页头样式 */
+
+.tn {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f1f1f1;
+}
+
+.tn-container {
+  width: 1210px;
+  margin: 0 auto;
+  background-color: #f1f1f1; /* 让元素浮动后显示背景色 */
+}
+
+.tn .fl { padding-right: 2px; }
+
+.tn .fl .dt { 
+  padding: 0 25px 0 10px; 
+  cursor: default;
+}
+
+/* dropdown元素hover时会多出1px边框，同时减少1px补白避免其移动 */
+
+.tn .fl:hover .dt { padding: 0 24px 0 9px; }
+
+.tn .fl .dd {
+  width: 301px;
+  padding: 10px 0 10px 10px;
+}
+
+.tn .city .item {
+  float: left;
+  width: 60px;
+  padding: 2px 0;
+}
+
+.tn .city a {
+  float: left;
+  padding: 0 8px;
+}
+
+.tn .city .item .active {
+  color: #fff;
+  background-color: #c81623;
+}
+
+.tn .city a:hover { background-color: #f4f4f4; }
+
+.tn .fl .dd-spacer {
+  left: 0;
+  width: 93px;
+}
+
+.tn .fr .tn-login { margin-right: 10px; }
+.tn .fr .active { color: #c81623; }
+
+/* 我的京东 */
+
+.tn-myjd .dt {
+  width: 49px;
+  padding-right: 25px;
+}
+
+.tn-myjd .dropdown-menu { width: 280px; }
+
+.tn-myjd .u-info {
+  padding: 10px 0 10px 15px;
+  overflow: hidden;
+}
+
+.tn-myjd .u-pic {
+  float: left;
+  margin-right: 10px;
+}
+
+.tn-myjd .u-pic img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.tn-myjd .u-login {
+  padding-top: 6px;
+  font-weight: 700;
+}
+
+.tn-myjd .u-msg .gap { margin: 0 10px; }
+
+.tn-myjd .u-list {
+  width: 255px;
+  padding-left: 15px;
+  margin: 5px 0 10px;
+  overflow: hidden;
+}
+
+.tn-myjd .u-list1,
+.tn-myjd .u-list2 {
+  float: left;
+  width: 126px;
+}
+
+.tn-myjd .u-view {
+  width: 250px;
+  padding: 10px 15px;
+  border-top: 1px dotted #ccc;
+}
+
+.tn-myjd .u-view-title h4 { float: left; }
+.tn-myjd .u-view-more { float: right; }
+
+.tn-myjd .u-view-item a {
+  display: block;
+  float: left;
+  padding: 4px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.tn-myjd .dd-spacer {
+  left: 0;
+  width: 82px;
+}
+
+/* 手机京东 */
+
+.tn-jdapp .dt {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.tn-jdapp .i-phone {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  display: block;
+  width: 15px;
+  height: 20px;
+  background: url(../img/icon.png) 0 0 no-repeat;
+}
+
+.tn-jdapp:hover .i-phone {
+  background: url(../img/icon.png) 0 -25px no-repeat;
+}
+
+.tn-jdapp .dd { width: 250px; }
+
+.tn-jdapp .dd-inner {
+  position: relative;
+  width: 250px;
+  height: 195px;
+  background: url(../img/jdapp.png);
+}
+
+.tn-jdapp .dd-inner a {
+  position: absolute;
+  display: block;
+  text-indent: -500px;
+  overflow: hidden;
+}
+
+.tn-jdapp .dd-inner .link1,
+.tn-jdapp .dd-inner .link3 {
+  left: 92px;
+  width: 100px;
+  height: 20px;
+}
+
+.tn-jdapp .dd-inner .link1 {
+  top: 6px;
+  background-position: 0 -44px;
+}
+
+.tn-jdapp .dd-inner .link3 {
+  top: 104px;
+  background-position: -1px -66px;
+}
+
+.tn-jdapp .dd-inner .link2,
+.tn-jdapp .dd-inner .link4 {
+  width: 136px;
+  height: 20px;
+  left: 99px;
+  text-indent: 0;
+  color: #c21a21;
+  cursor: default;
+}
+
+.tn-jdapp .dd-inner .link2 { top: 23px; }
+.tn-jdapp .dd-inner .link4 { top: 120px; }
+
+.tn-jdapp .dd-inner .applink {
+  width: 56px;
+  height: 44px;
+}
+
+.tn-jdapp .dd-inner .jdapp-ios { 
+  top: 46px; 
+  left: 92px; 
+}
+
+.tn-jdapp .dd-inner .jdapp-android { 
+  top: 46px; 
+  left: 147px; 
+}
+
+.tn-jdapp .dd-inner .jdapp-ipad { 
+  top: 46px; 
+  left: 202px; 
+  width: 45px;
+}
+
+.tn-jdapp .dd-inner .wyapp-ios { 
+  top: 143px; 
+  left: 92px; 
+}
+
+.tn-jdapp .dd-inner .wyapp-android { 
+  top: 143px; 
+  left: 147px; 
+}
+
+.tn-jdapp .dd-spacer { 
+  left: 0; 
+  width: 98px; 
+}
+
+/* 关注京东 */
+
+.tn-follow-jd .dt {
+  width: 49px;
+  padding-right: 25px;
+  cursor: default;
+}
+
+.tn-follow-jd .dropdown-menu {
+  width: 82px;
+  padding-bottom: 8px;
+}
+
+.tn-follow-jd .dd-spacer {
+  left: 0;
+  width: 82px;
+}
+
+/* 客户服务 */
+
+.tn-service .dt {
+  width: 49px;
+  padding-right: 25px;
+  cursor: default;
+}
+
+.tn-service .dropdown-menu {
+  width: 170px;
+  padding-bottom: 8px;
+}
+
+.tn-service .item-client,
+.tn-service .item-business {
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.tn-service .item-business {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px dotted #ccc;
+}
+
+.tn-service .item {
+  display: inline-block;
+  width: 70px;
+  padding-left: 10px;
+}
+
+.tn-service .dd-spacer {
+  left: 0;
+  width: 82px;
+}
+
+/* 网站导航 */
+
+.tn .fr .tn-nav { padding: 0 1px 0 2px; }
+.tn .fr .tn-nav:hover { padding: 0 0 0 1px; }
+
+.tn-nav .dt {
+  width: 49px;
+  padding-right: 25px;
+  cursor: default;
+}
+
+.tn-nav .dropdown-menu {
+  right: 0;
+  width: 1210px;
+  padding: 20px 0 16px;
+}
+
+.tn-nav dl {
+  float: left;
+  width: 259px;
+  padding-left: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.tn-nav .list1 {
+  width: 347px;
+  border-left: none;
+}
+
+.tn-nav dl dt {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.tn-nav .item {
+  float: left;
+  width: 86px;
+}
+
+.tn-nav .dd-spacer {
+  right: 0;
+  width: 82px;
+}
+
+/* 页头样式结束 */
